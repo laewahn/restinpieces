@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RESTinPieces' target in the 'RESTinPieces' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95B856431647D5A000AC9169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856421647D5A000AC9169 /* Foundation.framework */; };
+		95B856481647D5A000AC9169 /* RESTinPieces.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95B856471647D5A000AC9169 /* RESTinPieces.h */; };
+		95B8564A1647D5A000AC9169 /* RESTinPieces.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856491647D5A000AC9169 /* RESTinPieces.m */; };
+		95B856521647D5A000AC9169 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856511647D5A000AC9169 /* SenTestingKit.framework */; };
+		95B856541647D5A000AC9169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856531647D5A000AC9169 /* UIKit.framework */; };
+		95B856551647D5A000AC9169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856421647D5A000AC9169 /* Foundation.framework */; };
+		95B856581647D5A000AC9169 /* libRESTinPieces.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B8563F1647D5A000AC9169 /* libRESTinPieces.a */; };
+		95B8565E1647D5A000AC9169 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95B8565C1647D5A000AC9169 /* InfoPlist.strings */; };
+		95B856611647D5A000AC9169 /* RESTinPiecesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856601647D5A000AC9169 /* RESTinPiecesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95B856561647D5A000AC9169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95B856361647D5A000AC9169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95B8563E1647D5A000AC9169;
+			remoteInfo = RESTinPieces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95B8563D1647D5A000AC9169 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				95B856481647D5A000AC9169 /* RESTinPieces.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		95B8563F1647D5A000AC9169 /* libRESTinPieces.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESTinPieces.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B856421647D5A000AC9169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95B856461647D5A000AC9169 /* RESTinPieces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RESTinPieces-Prefix.pch"; sourceTree = "<group>"; };
+		95B856471647D5A000AC9169 /* RESTinPieces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTinPieces.h; sourceTree = "<group>"; };
+		95B856491647D5A000AC9169 /* RESTinPieces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTinPieces.m; sourceTree = "<group>"; };
+		95B856501647D5A000AC9169 /* RESTinPiecesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTinPiecesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B856511647D5A000AC9169 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		95B856531647D5A000AC9169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		95B8565B1647D5A000AC9169 /* RESTinPiecesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RESTinPiecesTests-Info.plist"; sourceTree = "<group>"; };
+		95B8565D1647D5A000AC9169 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95B8565F1647D5A000AC9169 /* RESTinPiecesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTinPiecesTests.h; sourceTree = "<group>"; };
+		95B856601647D5A000AC9169 /* RESTinPiecesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTinPiecesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95B8563C1647D5A000AC9169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B856431647D5A000AC9169 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B8564C1647D5A000AC9169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B856521647D5A000AC9169 /* SenTestingKit.framework in Frameworks */,
+				95B856541647D5A000AC9169 /* UIKit.framework in Frameworks */,
+				95B856551647D5A000AC9169 /* Foundation.framework in Frameworks */,
+				95B856581647D5A000AC9169 /* libRESTinPieces.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95B856341647D5A000AC9169 = {
+			isa = PBXGroup;
+			children = (
+				95B856441647D5A000AC9169 /* RESTinPieces */,
+				95B856591647D5A000AC9169 /* RESTinPiecesTests */,
+				95B856411647D5A000AC9169 /* Frameworks */,
+				95B856401647D5A000AC9169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95B856401647D5A000AC9169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95B8563F1647D5A000AC9169 /* libRESTinPieces.a */,
+				95B856501647D5A000AC9169 /* RESTinPiecesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95B856411647D5A000AC9169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B856421647D5A000AC9169 /* Foundation.framework */,
+				95B856511647D5A000AC9169 /* SenTestingKit.framework */,
+				95B856531647D5A000AC9169 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95B856441647D5A000AC9169 /* RESTinPieces */ = {
+			isa = PBXGroup;
+			children = (
+				95B856471647D5A000AC9169 /* RESTinPieces.h */,
+				95B856491647D5A000AC9169 /* RESTinPieces.m */,
+				95B856451647D5A000AC9169 /* Supporting Files */,
+			);
+			path = RESTinPieces;
+			sourceTree = "<group>";
+		};
+		95B856451647D5A000AC9169 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95B856461647D5A000AC9169 /* RESTinPieces-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95B856591647D5A000AC9169 /* RESTinPiecesTests */ = {
+			isa = PBXGroup;
+			children = (
+				95B8565F1647D5A000AC9169 /* RESTinPiecesTests.h */,
+				95B856601647D5A000AC9169 /* RESTinPiecesTests.m */,
+				95B8565A1647D5A000AC9169 /* Supporting Files */,
+			);
+			path = RESTinPiecesTests;
+			sourceTree = "<group>";
+		};
+		95B8565A1647D5A000AC9169 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95B8565B1647D5A000AC9169 /* RESTinPiecesTests-Info.plist */,
+				95B8565C1647D5A000AC9169 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95B8563E1647D5A000AC9169 /* RESTinPieces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B856641647D5A000AC9169 /* Build configuration list for PBXNativeTarget "RESTinPieces" */;
+			buildPhases = (
+				95B8563B1647D5A000AC9169 /* Sources */,
+				95B8563C1647D5A000AC9169 /* Frameworks */,
+				95B8563D1647D5A000AC9169 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RESTinPieces;
+			productName = RESTinPieces;
+			productReference = 95B8563F1647D5A000AC9169 /* libRESTinPieces.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		95B8564F1647D5A000AC9169 /* RESTinPiecesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B856671647D5A000AC9169 /* Build configuration list for PBXNativeTarget "RESTinPiecesTests" */;
+			buildPhases = (
+				95B8564B1647D5A000AC9169 /* Sources */,
+				95B8564C1647D5A000AC9169 /* Frameworks */,
+				95B8564D1647D5A000AC9169 /* Resources */,
+				95B8564E1647D5A000AC9169 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95B856571647D5A000AC9169 /* PBXTargetDependency */,
+			);
+			name = RESTinPiecesTests;
+			productName = RESTinPiecesTests;
+			productReference = 95B856501647D5A000AC9169 /* RESTinPiecesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95B856361647D5A000AC9169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "i10 RWTH";
+			};
+			buildConfigurationList = 95B856391647D5A000AC9169 /* Build configuration list for PBXProject "RESTinPieces" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95B856341647D5A000AC9169;
+			productRefGroup = 95B856401647D5A000AC9169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95B8563E1647D5A000AC9169 /* RESTinPieces */,
+				95B8564F1647D5A000AC9169 /* RESTinPiecesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95B8564D1647D5A000AC9169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B8565E1647D5A000AC9169 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95B8564E1647D5A000AC9169 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95B8563B1647D5A000AC9169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B8564A1647D5A000AC9169 /* RESTinPieces.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B8564B1647D5A000AC9169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B856611647D5A000AC9169 /* RESTinPiecesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95B856571647D5A000AC9169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95B8563E1647D5A000AC9169 /* RESTinPieces */;
+			targetProxy = 95B856561647D5A000AC9169 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95B8565C1647D5A000AC9169 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95B8565D1647D5A000AC9169 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95B856621647D5A000AC9169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95B856631647D5A000AC9169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95B856651647D5A000AC9169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RESTinPieces.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTinPieces/RESTinPieces-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95B856661647D5A000AC9169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RESTinPieces.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTinPieces/RESTinPieces-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		95B856681647D5A000AC9169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTinPieces/RESTinPieces-Prefix.pch";
+				INFOPLIST_FILE = "RESTinPiecesTests/RESTinPiecesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		95B856691647D5A000AC9169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTinPieces/RESTinPieces-Prefix.pch";
+				INFOPLIST_FILE = "RESTinPiecesTests/RESTinPiecesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95B856391647D5A000AC9169 /* Build configuration list for PBXProject "RESTinPieces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B856621647D5A000AC9169 /* Debug */,
+				95B856631647D5A000AC9169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B856641647D5A000AC9169 /* Build configuration list for PBXNativeTarget "RESTinPieces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B856651647D5A000AC9169 /* Debug */,
+				95B856661647D5A000AC9169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		95B856671647D5A000AC9169 /* Build configuration list for PBXNativeTarget "RESTinPiecesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B856681647D5A000AC9169 /* Debug */,
+				95B856691647D5A000AC9169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95B856361647D5A000AC9169 /* Project object */;
+}
