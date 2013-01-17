@@ -2,12 +2,17 @@
 //  RESTinPieces.h
 //  RESTinPieces
 //
-//  Created by Dennis Lewandowski on 11/5/12.
-//  Copyright (c) 2012 i10 RWTH. All rights reserved.
+//  Created by Dennis Lewandowski on 8/24/12.
+//  Copyright (c) 2012 Dennis Lewandowski. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef RESTinPieces_RESTinPieces_h
+#define RESTinPieces_RESTinPieces_h
 
-@interface RESTinPieces : NSObject
+#import "ServerRequest.h"
+#import "JSONServerRequestFactory.h"
+#import "RESTResourceSpecifier.h"
+#import "RESTRequestGenerator.h"
+#import "ServerRequestDelegate.h"
 
-@end
+#endif

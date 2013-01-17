@@ -8,14 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		95B856431647D5A000AC9169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856421647D5A000AC9169 /* Foundation.framework */; };
-		95B856481647D5A000AC9169 /* RESTinPieces.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95B856471647D5A000AC9169 /* RESTinPieces.h */; };
-		95B8564A1647D5A000AC9169 /* RESTinPieces.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856491647D5A000AC9169 /* RESTinPieces.m */; };
 		95B856521647D5A000AC9169 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856511647D5A000AC9169 /* SenTestingKit.framework */; };
-		95B856541647D5A000AC9169 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856531647D5A000AC9169 /* UIKit.framework */; };
 		95B856551647D5A000AC9169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B856421647D5A000AC9169 /* Foundation.framework */; };
 		95B856581647D5A000AC9169 /* libRESTinPieces.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B8563F1647D5A000AC9169 /* libRESTinPieces.a */; };
 		95B8565E1647D5A000AC9169 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95B8565C1647D5A000AC9169 /* InfoPlist.strings */; };
-		95B856611647D5A000AC9169 /* RESTinPiecesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856601647D5A000AC9169 /* RESTinPiecesTests.m */; };
+		95B8567F1647D6B600AC9169 /* ArgumentsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B8566F1647D6B600AC9169 /* ArgumentsParser.m */; };
+		95B856801647D6B600AC9169 /* JSONArgumentsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856711647D6B600AC9169 /* JSONArgumentsParser.m */; };
+		95B856811647D6B600AC9169 /* JSONServerRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856731647D6B600AC9169 /* JSONServerRequestFactory.m */; };
+		95B856821647D6B600AC9169 /* PListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856751647D6B600AC9169 /* PListParser.m */; };
+		95B856831647D6B600AC9169 /* RESTRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856791647D6B600AC9169 /* RESTRequestGenerator.m */; };
+		95B856841647D6B600AC9169 /* RESTResourceSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B8567B1647D6B600AC9169 /* RESTResourceSpecifier.m */; };
+		95B856851647D6B600AC9169 /* ServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B8567D1647D6B600AC9169 /* ServerRequest.m */; };
+		95B856901647D71D00AC9169 /* ArgumentsParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856871647D71D00AC9169 /* ArgumentsParserTests.m */; };
+		95B856911647D71D00AC9169 /* RESTRequestGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B856891647D71D00AC9169 /* RESTRequestGeneratorTests.m */; };
+		95B856921647D71D00AC9169 /* RESTResourceSpecifierStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B8568B1647D71D00AC9169 /* RESTResourceSpecifierStub.m */; };
+		95B856931647D71D00AC9169 /* RESTResourceSpecifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B8568D1647D71D00AC9169 /* RESTResourceSpecifierTests.m */; };
+		95B856941647D71D00AC9169 /* ServerRequestFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B8568F1647D71D00AC9169 /* ServerRequestFactoryTests.m */; };
+		95B8569C1647D99A00AC9169 /* RESTinPieces.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B856771647D6B600AC9169 /* RESTinPieces.h */; };
+		95B8569D1647D99A00AC9169 /* JSONServerRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B856721647D6B600AC9169 /* JSONServerRequestFactory.h */; };
+		95B8569E1647D99A00AC9169 /* ServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B8567C1647D6B600AC9169 /* ServerRequest.h */; };
+		95B8569F1647D99A00AC9169 /* RESTRequestGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B856781647D6B600AC9169 /* RESTRequestGenerator.h */; };
+		95B856A01647D99A00AC9169 /* RESTResourceSpecifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B8567A1647D6B600AC9169 /* RESTResourceSpecifier.h */; };
+		95B856A11647D99A00AC9169 /* ServerRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B8567E1647D6B600AC9169 /* ServerRequestDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +49,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				95B856481647D5A000AC9169 /* RESTinPieces.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,16 +57,38 @@
 /* Begin PBXFileReference section */
 		95B8563F1647D5A000AC9169 /* libRESTinPieces.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESTinPieces.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B856421647D5A000AC9169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		95B856461647D5A000AC9169 /* RESTinPieces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RESTinPieces-Prefix.pch"; sourceTree = "<group>"; };
-		95B856471647D5A000AC9169 /* RESTinPieces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTinPieces.h; sourceTree = "<group>"; };
-		95B856491647D5A000AC9169 /* RESTinPieces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTinPieces.m; sourceTree = "<group>"; };
 		95B856501647D5A000AC9169 /* RESTinPiecesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTinPiecesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B856511647D5A000AC9169 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		95B856531647D5A000AC9169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		95B8565B1647D5A000AC9169 /* RESTinPiecesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RESTinPiecesTests-Info.plist"; sourceTree = "<group>"; };
 		95B8565D1647D5A000AC9169 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		95B8565F1647D5A000AC9169 /* RESTinPiecesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTinPiecesTests.h; sourceTree = "<group>"; };
-		95B856601647D5A000AC9169 /* RESTinPiecesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTinPiecesTests.m; sourceTree = "<group>"; };
+		95B8566E1647D6B600AC9169 /* ArgumentsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArgumentsParser.h; sourceTree = "<group>"; };
+		95B8566F1647D6B600AC9169 /* ArgumentsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArgumentsParser.m; sourceTree = "<group>"; };
+		95B856701647D6B600AC9169 /* JSONArgumentsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONArgumentsParser.h; sourceTree = "<group>"; };
+		95B856711647D6B600AC9169 /* JSONArgumentsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONArgumentsParser.m; sourceTree = "<group>"; };
+		95B856721647D6B600AC9169 /* JSONServerRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONServerRequestFactory.h; sourceTree = "<group>"; };
+		95B856731647D6B600AC9169 /* JSONServerRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONServerRequestFactory.m; sourceTree = "<group>"; };
+		95B856741647D6B600AC9169 /* PListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PListParser.h; sourceTree = "<group>"; };
+		95B856751647D6B600AC9169 /* PListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PListParser.m; sourceTree = "<group>"; };
+		95B856761647D6B600AC9169 /* RESTinPieces-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RESTinPieces-Prefix.pch"; sourceTree = "<group>"; };
+		95B856771647D6B600AC9169 /* RESTinPieces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTinPieces.h; sourceTree = "<group>"; };
+		95B856781647D6B600AC9169 /* RESTRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTRequestGenerator.h; sourceTree = "<group>"; };
+		95B856791647D6B600AC9169 /* RESTRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTRequestGenerator.m; sourceTree = "<group>"; };
+		95B8567A1647D6B600AC9169 /* RESTResourceSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTResourceSpecifier.h; sourceTree = "<group>"; };
+		95B8567B1647D6B600AC9169 /* RESTResourceSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTResourceSpecifier.m; sourceTree = "<group>"; };
+		95B8567C1647D6B600AC9169 /* ServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerRequest.h; sourceTree = "<group>"; };
+		95B8567D1647D6B600AC9169 /* ServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerRequest.m; sourceTree = "<group>"; };
+		95B8567E1647D6B600AC9169 /* ServerRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerRequestDelegate.h; sourceTree = "<group>"; };
+		95B856861647D71D00AC9169 /* ArgumentsParserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArgumentsParserTests.h; sourceTree = "<group>"; };
+		95B856871647D71D00AC9169 /* ArgumentsParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArgumentsParserTests.m; sourceTree = "<group>"; };
+		95B856881647D71D00AC9169 /* RESTRequestGeneratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTRequestGeneratorTests.h; sourceTree = "<group>"; };
+		95B856891647D71D00AC9169 /* RESTRequestGeneratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTRequestGeneratorTests.m; sourceTree = "<group>"; };
+		95B8568A1647D71D00AC9169 /* RESTResourceSpecifierStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTResourceSpecifierStub.h; sourceTree = "<group>"; };
+		95B8568B1647D71D00AC9169 /* RESTResourceSpecifierStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTResourceSpecifierStub.m; sourceTree = "<group>"; };
+		95B8568C1647D71D00AC9169 /* RESTResourceSpecifierTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTResourceSpecifierTests.h; sourceTree = "<group>"; };
+		95B8568D1647D71D00AC9169 /* RESTResourceSpecifierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTResourceSpecifierTests.m; sourceTree = "<group>"; };
+		95B8568E1647D71D00AC9169 /* ServerRequestFactoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerRequestFactoryTests.h; sourceTree = "<group>"; };
+		95B8568F1647D71D00AC9169 /* ServerRequestFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerRequestFactoryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +105,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95B856521647D5A000AC9169 /* SenTestingKit.framework in Frameworks */,
-				95B856541647D5A000AC9169 /* UIKit.framework in Frameworks */,
 				95B856551647D5A000AC9169 /* Foundation.framework in Frameworks */,
 				95B856581647D5A000AC9169 /* libRESTinPieces.a in Frameworks */,
 			);
@@ -83,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				95B856441647D5A000AC9169 /* RESTinPieces */,
+				95B856951647D7AC00AC9169 /* New Group */,
 				95B856591647D5A000AC9169 /* RESTinPiecesTests */,
 				95B856411647D5A000AC9169 /* Frameworks */,
 				95B856401647D5A000AC9169 /* Products */,
@@ -111,8 +146,12 @@
 		95B856441647D5A000AC9169 /* RESTinPieces */ = {
 			isa = PBXGroup;
 			children = (
-				95B856471647D5A000AC9169 /* RESTinPieces.h */,
-				95B856491647D5A000AC9169 /* RESTinPieces.m */,
+				95B8569A1647D8E300AC9169 /* Headers */,
+				95B8569B1647D93E00AC9169 /* Parsers */,
+				95B856731647D6B600AC9169 /* JSONServerRequestFactory.m */,
+				95B856791647D6B600AC9169 /* RESTRequestGenerator.m */,
+				95B8567B1647D6B600AC9169 /* RESTResourceSpecifier.m */,
+				95B8567D1647D6B600AC9169 /* ServerRequest.m */,
 				95B856451647D5A000AC9169 /* Supporting Files */,
 			);
 			path = RESTinPieces;
@@ -121,7 +160,7 @@
 		95B856451647D5A000AC9169 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				95B856461647D5A000AC9169 /* RESTinPieces-Prefix.pch */,
+				95B856761647D6B600AC9169 /* RESTinPieces-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,8 +168,16 @@
 		95B856591647D5A000AC9169 /* RESTinPiecesTests */ = {
 			isa = PBXGroup;
 			children = (
-				95B8565F1647D5A000AC9169 /* RESTinPiecesTests.h */,
-				95B856601647D5A000AC9169 /* RESTinPiecesTests.m */,
+				95B856861647D71D00AC9169 /* ArgumentsParserTests.h */,
+				95B856871647D71D00AC9169 /* ArgumentsParserTests.m */,
+				95B856881647D71D00AC9169 /* RESTRequestGeneratorTests.h */,
+				95B856891647D71D00AC9169 /* RESTRequestGeneratorTests.m */,
+				95B8568A1647D71D00AC9169 /* RESTResourceSpecifierStub.h */,
+				95B8568B1647D71D00AC9169 /* RESTResourceSpecifierStub.m */,
+				95B8568C1647D71D00AC9169 /* RESTResourceSpecifierTests.h */,
+				95B8568D1647D71D00AC9169 /* RESTResourceSpecifierTests.m */,
+				95B8568E1647D71D00AC9169 /* ServerRequestFactoryTests.h */,
+				95B8568F1647D71D00AC9169 /* ServerRequestFactoryTests.m */,
 				95B8565A1647D5A000AC9169 /* Supporting Files */,
 			);
 			path = RESTinPiecesTests;
@@ -145,13 +192,63 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		95B856951647D7AC00AC9169 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		95B8569A1647D8E300AC9169 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				95B856771647D6B600AC9169 /* RESTinPieces.h */,
+				95B856721647D6B600AC9169 /* JSONServerRequestFactory.h */,
+				95B8567C1647D6B600AC9169 /* ServerRequest.h */,
+				95B856781647D6B600AC9169 /* RESTRequestGenerator.h */,
+				95B8567A1647D6B600AC9169 /* RESTResourceSpecifier.h */,
+				95B8567E1647D6B600AC9169 /* ServerRequestDelegate.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		95B8569B1647D93E00AC9169 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				95B8566E1647D6B600AC9169 /* ArgumentsParser.h */,
+				95B8566F1647D6B600AC9169 /* ArgumentsParser.m */,
+				95B856701647D6B600AC9169 /* JSONArgumentsParser.h */,
+				95B856711647D6B600AC9169 /* JSONArgumentsParser.m */,
+				95B856741647D6B600AC9169 /* PListParser.h */,
+				95B856751647D6B600AC9169 /* PListParser.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95B856991647D89600AC9169 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B8569C1647D99A00AC9169 /* RESTinPieces.h in Headers */,
+				95B8569D1647D99A00AC9169 /* JSONServerRequestFactory.h in Headers */,
+				95B8569E1647D99A00AC9169 /* ServerRequest.h in Headers */,
+				95B8569F1647D99A00AC9169 /* RESTRequestGenerator.h in Headers */,
+				95B856A01647D99A00AC9169 /* RESTResourceSpecifier.h in Headers */,
+				95B856A11647D99A00AC9169 /* ServerRequestDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		95B8563E1647D5A000AC9169 /* RESTinPieces */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95B856641647D5A000AC9169 /* Build configuration list for PBXNativeTarget "RESTinPieces" */;
 			buildPhases = (
+				95B856991647D89600AC9169 /* Headers */,
 				95B8563B1647D5A000AC9169 /* Sources */,
 				95B8563C1647D5A000AC9169 /* Frameworks */,
 				95B8563D1647D5A000AC9169 /* CopyFiles */,
@@ -243,7 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95B8564A1647D5A000AC9169 /* RESTinPieces.m in Sources */,
+				95B8567F1647D6B600AC9169 /* ArgumentsParser.m in Sources */,
+				95B856801647D6B600AC9169 /* JSONArgumentsParser.m in Sources */,
+				95B856811647D6B600AC9169 /* JSONServerRequestFactory.m in Sources */,
+				95B856821647D6B600AC9169 /* PListParser.m in Sources */,
+				95B856831647D6B600AC9169 /* RESTRequestGenerator.m in Sources */,
+				95B856841647D6B600AC9169 /* RESTResourceSpecifier.m in Sources */,
+				95B856851647D6B600AC9169 /* ServerRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +354,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95B856611647D5A000AC9169 /* RESTinPiecesTests.m in Sources */,
+				95B856901647D71D00AC9169 /* ArgumentsParserTests.m in Sources */,
+				95B856911647D71D00AC9169 /* RESTRequestGeneratorTests.m in Sources */,
+				95B856921647D71D00AC9169 /* RESTResourceSpecifierStub.m in Sources */,
+				95B856931647D71D00AC9169 /* RESTResourceSpecifierTests.m in Sources */,
+				95B856941647D71D00AC9169 /* ServerRequestFactoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +405,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -318,7 +425,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -397,6 +504,7 @@
 				95B856661647D5A000AC9169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95B856671647D5A000AC9169 /* Build configuration list for PBXNativeTarget "RESTinPiecesTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +513,7 @@
 				95B856691647D5A000AC9169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
